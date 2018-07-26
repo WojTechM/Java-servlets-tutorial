@@ -1,0 +1,22 @@
+body {
+    font-family: Verdana, Helvetica, sans-serif;
+    background-color: #CCCCFF;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 1000px;
+    height: 600px;
+    margin: 5%;
+}
