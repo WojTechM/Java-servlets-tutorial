@@ -1,0 +1,4 @@
+com/codecool/servlets/TextFileServlet.class
+com/codecool/servlets/ImageServlet.class
+com/codecool/servlets/IndexServlet.class
+com/codecool/servletHelper/StaticFileManager.class
