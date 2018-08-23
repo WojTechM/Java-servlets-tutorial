@@ -5,16 +5,18 @@
 <web-app>
     <display-name>Archetype Created Web Application</display-name>
     <servlet>
+        <servlet-name>ImageServlet</servlet-name>
+        <servlet-class>com.codecool.servlets.ImageServlet</servlet-class>
+    </servlet>
+
+
+    <servlet>
         <servlet-name>IndexServlet</servlet-name>
         <servlet-class>com.codecool.servlets.IndexServlet</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>TextServlet</servlet-name>
         <servlet-class>com.codecool.servlets.TextFileServlet</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>ImageServlet</servlet-name>
-        <servlet-class>com.codecool.servlets.ImageServlet</servlet-class>
     </servlet>
 
     <servlet-mapping>
@@ -31,6 +33,11 @@
     </servlet-mapping>
 
     <servlet-mapping>
+        <servlet-name>IndexServlet</servlet-name>
+        <url-pattern>/index/*</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
         <servlet-name>ImageServlet</servlet-name>
         <url-pattern>*.png</url-pattern>
     </servlet-mapping>
@@ -39,8 +46,4 @@
         <url-pattern>*.jpg</url-pattern>
     </servlet-mapping>
 
-    <servlet-mapping>
-        <servlet-name>IndexServlet</servlet-name>
-        <url-pattern>/index/*</url-pattern>
-    </servlet-mapping>
 </web-app>
